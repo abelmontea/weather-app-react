@@ -53,7 +53,7 @@ function App() {
       </div>
       <div className="github-link text-center">
         <a
-          href="https://github.com/abelmontea/Working-Weather-App"
+          href="https://github.com/abelmontea/weather-app-react"
           target="_blank"
           rel="noreferrer"
         >
