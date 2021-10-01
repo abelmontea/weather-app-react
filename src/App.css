@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+.container {
+  max-width: 650px;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgb(190, 162, 193) 0%,
+    rgb(243, 230, 223) 97%
+  );
+  background-repeat: no-repeat;
+  color: #fff;
+}
+h2 {
+  font-weight: 700;
+  line-height: 1;
+}
+a {
+  color: #c2a7c3;
+}
+a:hover {
+  color: #fff;
+}
+.container {
+  padding-top: 30px;
+}
+.forecast-temp {
+  color: #1b4de4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.github-link {
+  color: #6f4097;
+}
+.github-link a {
+  color: #6f4097;
+}
+.github-link a:hover {
+  color: #fff;
+}
+form .use-current-location {
+  max-width: 150px;
+}
+#city-state {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+#city-state::first-letter {
+  text-transform: capitalize;
+}
+#current-temperature {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+#current-temperature-img {
+  text-align: right;
+  line-height: 1.1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#local-time {
+  opacity: 0.65;
+}
+#weather-info {
+  background: linear-gradient(
+    180deg,
+    rgb(111, 64, 152) 0%,
+    rgb(162, 117, 151) 100%
+  );
+  padding: 15px;
+  margin: 30px auto;
+}
+#units {
+  float: right;
+  position: relative;
+  left: -275px;
+  top: 19px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#weather-forecast {
+  background: #fff;
+  color: #000;
+  padding: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+#forecast {
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding-bottom: 15px;
+}
+#forecast-city {
+  text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.forecast-temp {
+  font-size: 2.25rem;
 }
