@@ -1,14 +1,12 @@
 import "./App.css";
 
 import Form from "./Form.js";
-import Weather from "./Weather.js";
 
 function App() {
   return (
     <div className="App container">
-      <Form />
-      <Weather />
-      <div id="weather-forecast" class="border-white rounded">
+      <Form defaultCity="Seattle" />
+      <div id="weather-forecast" className="border-white rounded">
         <div id="forecast">
           Forecast for <span id="forecast-city">Seattle</span>
         </div>
