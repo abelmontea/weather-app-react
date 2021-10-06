@@ -1,11 +1,11 @@
 import React from "react";
 
 import FormattedDate from "./FormattedDate.js";
-
+import WeatherTemperature from "./WeatherTemperature.js";
 export default function WeatherInfo(props) {
   return (
     <div id="weather-info" className="border-white rounded">
-      <div id="city-state">Seattle Weather</div>
+      <div id="city-state">{props.data.city} Weather</div>
       <div id="local-time">
         As of{" "}
         <span id="time">
@@ -14,8 +14,8 @@ export default function WeatherInfo(props) {
       </div>
       <div id="current-weather" className="row justify-content-between">
         <div id="floating-temperature" className="col">
-          <span id="current-temperature">{props.data.temperature}</span>
-          <span id="units"> °F</span>
+          <WeatherTemperature fahrenheit={props.data.temperature} />
+
           <div id="weather-description">
             <h2>{props.data.description}</h2>
           </div>

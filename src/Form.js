@@ -10,6 +10,7 @@ export default function Form(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      city: response.data.name,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].main,
       humidity: response.data.main.humidity,
