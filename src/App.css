@@ -41,9 +41,7 @@ a:hover {
 .github-link a:hover {
   color: #fff;
 }
-form .use-current-location {
-  max-width: 150px;
-}
+
 #city-state {
   font-weight: 600;
   font-size: 1.25rem;

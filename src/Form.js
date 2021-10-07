@@ -57,11 +57,6 @@ export default function Form(props) {
                 className="search-button btn btn-success"
               />
             </div>
-            <div className="col-md-auto">
-              <button className="use-current-location btn btn-primary">
-                Current Location
-              </button>
-            </div>
           </div>
         </form>
         <WeatherInfo data={weatherData} />
